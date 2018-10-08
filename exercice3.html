@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Exercice 3</title>
+    <script>
+      function Hello(){
+        var firstName=window.prompt("Votre prénom : ");
+        var reg=new RegExp(/[a-zA-z]{1,}/);
+        if(reg.test(firstName))
+          window.alert("Bonjour, "+ firstName);
+        else {
+          Hello();
+        }
+      };
+      window.onLoad(Hello());
+    </script>
+  </head>
+    <body>
+
+    </body>
+</html>
